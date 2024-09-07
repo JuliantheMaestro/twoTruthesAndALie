@@ -3,101 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Handjet:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>2Truths1Lie</title>
+    <title>2Lies1Truth</title>
 </head>
 <body>
-    <h1>Two Truthes and One Lie</h1>
-<h2>Rules</h2>
-    <p>"Two truths and a lie" is a game where players take turns sharing three statements about themselves, 
-        two of which are true and one of which is a lie. 
+    <div>
+    <h1>Two Lies and One Truth</h1>
+    <h2>Rules</h2>
+    <p>"Two lies and one truth" is a game where players take turns sharing three statements about themselves, 
+        two of which are false and one of which is true. 
     </p>
     <br>
-    <p>Select the lie out of the three statements to gain points. If you got more than 9 questions right you must be spying on me! Good luck!
+    <p>Select the truth out of the three statements to gain points. If you get more than nine questions right you might be spying on me! Good luck!
     </p>
-    <div id="questions">
-        <ol>
-            <li>First question</li>
-                <input type="radio" id="child" name="age" value="child">
-                <label for="child">I have a silver car</label><br>
-                <input type="radio" id="adult" name="age" value="adult">
-                <label for="adult">I have a silver car</label><br>
-                <input type="radio" id="senior" name="age" value="senior">
-                <label for="senior">I have a silver car</label><br>
-
-            <li>Second question</li>
-            <input type="radio" id="child" name="age" value="child">
-            <label for="child">I have a silver car</label><br>
-            <input type="radio" id="adult" name="age" value="adult">
-            <label for="adult">I have a silver car</label><br>
-            <input type="radio" id="senior" name="age" value="senior">
-            <label for="senior">I have a silver car</label><br>
-
-            <li>Third question</li>
-            <input type="radio" id="child" name="age" value="child">
-            <label for="child">I have a silver car</label><br>
-            <input type="radio" id="adult" name="age" value="adult">
-            <label for="adult">I have a silver car</label><br>
-            <input type="radio" id="senior" name="age" value="senior">
-            <label for="senior">I have a silver car</label><br>
-
-            <li>Fourth question</li>
-            <input type="radio" id="child" name="age" value="child">
-                <label for="child">I have a silver car</label><br>
-                <input type="radio" id="adult" name="age" value="adult">
-                <label for="adult">I have a silver car</label><br>
-                <input type="radio" id="senior" name="age" value="senior">
-                <label for="senior">I have a silver car</label><br>
-
-            <li>Fifth question</li>
-            <input type="radio" id="child" name="age" value="child">
-            <label for="child">I have a silver car</label><br>
-            <input type="radio" id="adult" name="age" value="adult">
-            <label for="adult">I have a silver car</label><br>
-            <input type="radio" id="senior" name="age" value="senior">
-            <label for="senior">I have a silver car</label><br>
-
-            <li>Sixth question</li>
-            <input type="radio">
-                <label>I have a silver car</label><br>
-                <input type="radio">
-                <label>I have a silver car</label><br>
-                <input type="radio">
-                <label>I have a silver car</label><br>
-
-            <li>Seventh question</li>
-            <input type="radio">
-                <label>I have a silver car</label><br>
-                <input type="radio">
-                <label>I have a silver car</label><br>
-                <input type="radio">
-                <label>I have a silver car</label><br>
-
-            <li>Eighth question</li>
-            <input type="radio">
-                <label>I have a silver car</label><br>
-                <input type="radio">
-                <label>I have a silver car</label><br>
-                <input type="radio">
-                <label>I have a silver car</label><br>
-
-            <li>Ninth question</li>
-            <input type="radio">
-            <label>I have a silver car</label><br>
-            <input type="radio">
-            <label>I have a silver car</label><br>
-            <input type="radio">
-            <label>I have a silver car</label><br>
-            
-            <li>Tenth question</li>
-            <input type="radio">
-            <label>I have a silver car</label><br>
-            <input type="radio">
-            <label>I have a silver car</label><br>
-            <input type="radio">
-            <label>I have a silver car</label><br>
-        </ol>
     </div>
+    <form id="questions">
+        <fieldset>
+            <input type="radio" name="question-1" value="b">
+             <label>I can identify over 200 bird species by their calls alone</label><br>
+
+            <input type="radio" name="question-1" value="a">
+             <label>I have a silver car</label><br>
+
+            <input type="radio" name="question-1" value="c">
+                <label>I once gave a TED Talk on sustainable urban planning.</label><br>
+            </fieldset>
+        <br>
+       
+        <fieldset>
+
+            <input type="radio" name="question-2" value="a">
+                <label>I've been to the jungle</label><br>
+
+
+            <input type="radio" name="question-2" value="b">
+                <label>My favourite subject in school was English, so I decided to become a writer.</label><br>
+
+            <input type="radio" name="question-2" value="c">
+                    <label>One of my main professional goals is to one day become the president of a financial corporation.</label><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <input type="radio" name="question-3" value="a">
+            <label>I can do a backflip</label><br>
+                <input type="radio" name="question-3" value="b">
+            <label>I took Chinese in Highschool</label><br>
+                <input type="radio" name="question-3" value="c">
+            <label>I've eaten a scorpion before</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" name="question-4" value="a">
+            <label>I have a tattoo of a raven</label><br>
+                <input type="radio" name="question-4" value="b">
+            <label>I have a tattoo of a koi fish</label><br>
+                <input type="radio" name="question-4" value="c">
+            <label>I have 3 geckos and 2 hamsters</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" name="question-5" value="a">
+            <label>I've gone surfing before</label><br>
+                <input type="radio" name="question-5" value="b">
+            <label>I walk over 20 miles a week</label><br>
+                <input type="radio" name="question-5" value="c">
+            <label>My favorite food is Italian</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" name="question-6" value="a">
+            <label>I have two motorcycles, a liquid cooled v4 and a suzuki sv650</label><br>
+                <input type="radio" name="question-6" value="b">
+            <label>I jumped out of a plane</label><br>
+                <input type="radio" name="question-6" value="c">
+            <label>I've done improv before</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" name="question-7" value="a">
+            <label>My dad fell off a cliff twice</label><br>
+                <input type="radio" name="question-7" value="b">
+            <label>I fell off a cliff twice</label><br>
+                <input type="radio" name="question-7" value="c">
+            <label>My dog fell off a cliff twice</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" name="question-8" value="a">
+            <label>I swam across the English Channel</label><br>
+                <input type="radio" name="question-8" value="b">
+            <label>I've been on all but two trails in the Jefferson Memorial Forest</label><br>
+                <input type="radio" name="question-8" value="c">
+            <label>I'm a scorpio</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+                <input type="radio" name="question-9" value="b">
+            <label>I speak four languages</label><br>
+                <input type="radio" name="question-9" value="c">
+            <label>I caught five tuna in one day</label><br>
+                <input type="radio" name="question-9" value="a">
+            <label>I fused heavier isotopes of known elements together by using a particle accelerator</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" name="question-10" value="a">
+            <label>I've touched an elephant</label><br>
+                <input type="radio" name="question-10" value="b">
+            <label>I've shot a shotgun</label><br>
+                <input type="radio" name="question-10" value="c">
+            <label>I took opera lessons</label><br>
+        </fieldset>
+            
+        
+           
+        <button type="button" onclick="getValue()">Submit</button>
+        <span id="sum-el">Your score is: </span>
+    </form>
     <script src="index.js"></script>
 </body>
 </html>
+
+
+
