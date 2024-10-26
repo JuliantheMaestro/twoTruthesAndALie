@@ -11,24 +11,28 @@ const correctAnswers = {
     "question-7": "a",
     "question-8": "b",
     "question-9": "c",
-    "question-10": "a"
+    "question-10": "a",
 };
 
 function getValue() {
     let score = 0;
     
-    // Loop through each question
+    
     for (let question in correctAnswers) {
-        // Get the selected radio button for the question
+        
         const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
         
-        // Check if the selected option's value matches the correct answer
+        
         if (selectedOption && selectedOption.value === correctAnswers[question]) {
             score++;
         }
     }
 
-    // Update the score display
     document.getElementById('sum-el').innerText = "Your score is: " + score;
+
+    let correctElements = document.getElementsByClassName("correct-el");
+    for (let i = 0; i < correctElements.length; i++) {
+        correctElements[i].style.color = "lightgreen";
+    }
 }
 
