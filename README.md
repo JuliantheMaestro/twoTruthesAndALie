@@ -1,0 +1,1 @@
+This is a basic website highlighting two lies and one truth about me. If the user gets some of the answers wrong it will highlight all of the correct answers in green and give a score. Try to get a 10 out of 10 and you may know me!
